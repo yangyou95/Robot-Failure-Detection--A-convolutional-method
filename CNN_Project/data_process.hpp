@@ -1,14 +1,14 @@
 //
-//  convolution.hpp
+//  data_process.hpp
 //  CNN_Project
 //
 //  Created by Yang on 2018/12/5.
 //  Copyright © 2018 Yang. All rights reserved.
 //
 
-#ifndef convolution_hpp
-#define convolution_hpp
+#ifndef data_process_hpp
+#define data_process_hpp
 
 #include <stdio.h>
 
-#endif /* convolution_hpp */
+#endif /* data_process_hpp */

@@ -6,10 +6,24 @@
 //  Copyright © 2018 Yang. All rights reserved.
 //
 
-#include <iostream>
+#include "cnn_header.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+void data_process(std::string buffer_input,std::string buffer_output);
+
+
+int main() {
+    string inp, outp;
+    string input_path, output_path;
+    cout << "please enter the name of input file\n";
+    cin >> inp;
+    cout << "please enter the name of output file including the path\n";
+    cin >> outp;
+    input_path = input_folder_path + inp;
+    output_path = output_data_process_path + outp;
+    data_process(input_path, output_path);
+    
+
     return 0;
 }
