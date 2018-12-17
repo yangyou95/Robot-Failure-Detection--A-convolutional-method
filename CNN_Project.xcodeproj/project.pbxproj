@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1AF26621C8674700746362 /* label_process.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F1AF26521C8674700746362 /* label_process.cpp */; };
 		2F21693221B21AE4002F1820 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2F21693121B21AE4002F1820 /* main.cpp */; };
 		2FBBFEE721BDAA5500800EC3 /* data_joint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBFEE621BDAA5500800EC3 /* data_joint.cpp */; };
 		2FC90CEF21B8214500FA65C9 /* convolution.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2FC90CED21B8214500FA65C9 /* convolution.cpp */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2F1AF26521C8674700746362 /* label_process.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = label_process.cpp; sourceTree = "<group>"; };
 		2F21692E21B21AE4002F1820 /* CNN_Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CNN_Project; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F21693121B21AE4002F1820 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2FBBFEE621BDAA5500800EC3 /* data_joint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = data_joint.cpp; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 		2F21693021B21AE4002F1820 /* CNN_Project */ = {
 			isa = PBXGroup;
 			children = (
+				2F1AF26521C8674700746362 /* label_process.cpp */,
 				2F21693121B21AE4002F1820 /* main.cpp */,
 				2FC90CED21B8214500FA65C9 /* convolution.cpp */,
 				2FC90CEE21B8214500FA65C9 /* cnn_header.hpp */,
@@ -134,6 +137,7 @@
 			files = (
 				2FC90CF521B9DE6D00FA65C9 /* split_data.cpp in Sources */,
 				2FBBFEE721BDAA5500800EC3 /* data_joint.cpp in Sources */,
+				2F1AF26621C8674700746362 /* label_process.cpp in Sources */,
 				2FC90CEF21B8214500FA65C9 /* convolution.cpp in Sources */,
 				2F21693221B21AE4002F1820 /* main.cpp in Sources */,
 				2FC90CF221B82AC900FA65C9 /* data_process.cpp in Sources */,
