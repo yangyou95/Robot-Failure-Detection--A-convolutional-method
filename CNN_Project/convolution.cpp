@@ -20,9 +20,15 @@ void conv(string conv_input,string conv_output, int c){
     int a[row][col]; // Initilize input data matrix
     double M[row- 2 ][col- 2]; // store the convoluted data
     // define the convolition kernel
-    double ck1[3][3] = {0.1111,0.1111,0.1111,
-        0.1111,0.1111,0.1111,
-        0.1111,0.1111,0.1111
+//    double ck1[3][3] = {0.1111,0.1111,0.1111,
+//        0.1111,0.1111,0.1111,
+//        0.1111,0.1111,0.1111
+//    };
+    
+    // Gaussian kernel
+    double ck2[3][3] = {0.0751136, 0.123841, 0.0751136,
+                        0.123841, 0.20418, 0.123841,
+                        0.0751136, 0.123841, 0.0751136
     };
     
     ifstream conv_in(conv_input); //input flow
@@ -48,7 +54,7 @@ void conv(string conv_input,string conv_output, int c){
             //conv process
             for (int k = 0; k < 3 ; k++) {
                 for (int l = 0; l < 3; l ++) {
-                    double tem = ck1[k][l] * a[i + k][j + l];
+                    double tem = ck2[k][l] * a[i + k][j + l];
                     sum = sum + tem;
                     double f_val = sum/9;
                     M[i][j] = f_val;
