@@ -46,6 +46,10 @@ void split(string input_datafile_path){
     
     k = i/90;
     
+    //joint orginal data
+    cout << "Data fusion for orginal data" <<endl;
+    data_joint(output_folder_path,k);
+    
     //Convolution process
     cout << "Please choose the type of convlution kernel, type 1 is the default value."<< endl;
     cin >> c;
@@ -57,7 +61,9 @@ void split(string input_datafile_path){
     }
    
     // joint data for later matlab process
+    
     conv_ouptut = output_conv_path + folder_path;
+    cout << "Data fusion for convoluted data" <<endl;
     data_joint(conv_ouptut,k);
     
     
