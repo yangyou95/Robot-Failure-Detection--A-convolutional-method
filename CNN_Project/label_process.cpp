@@ -20,9 +20,10 @@ using namespace std;
 
 void label_process(){
     
-    string label_file;
-    cout << "please input the file path of the label file" << endl;
+    string label_file, label_file_path;
+    cout << "please input the label file name" << endl;
     cin >> label_file;
+    label_file_path = labels_path + label_file;
     
     string temp;
     
@@ -32,10 +33,12 @@ void label_process(){
     string A[n_var];
     int B[n_var];
     
-    for(int i=0;i<n_var;i++){
+    for(int i=0;i<n_var;i++)
+    {
         cout << "Please enter the label"<<endl;
         cin >> A[i];
-        cout << "Please enter the value for label " << A[n_var] <<endl;
+        if(i<0)continue;
+        cout << "Please enter the value for label " << A[i] <<endl;
         cin >> B[i];
     }
     string label_file_name;
@@ -44,7 +47,7 @@ void label_process(){
     string label_output = matlab_process_path + label_file_name;
     
     
-    ifstream myfile(label_file); //input flow
+    ifstream myfile(label_file_path); //input flow
     ofstream outfile(label_output, ios::app); // output flow
     
     if (!myfile.is_open()) {
@@ -56,7 +59,7 @@ void label_process(){
         myfile >> temp;
         for(int i=0;i<n_var;i++){
             if (temp == A[i]) {
-                outfile << B[i];
+                outfile << B[i] << endl;
             }
         }
     }

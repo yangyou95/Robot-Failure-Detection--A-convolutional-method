@@ -17,3 +17,4 @@ const string input_folder_path = "/Users/yang/Desktop/cranfield/Assignment for M
 const string output_data_process_path = "/Users/yang/Desktop/cranfield/Assignment for ML and Programming/CNN_Project/CNN_Project/processed_data/";
 const string output_conv_path = "/Users/yang/Desktop/cranfield/Assignment for ML and Programming/CNN_Project/CNN_Project/conv_data/";
 const string matlab_process_path = "/Users/yang/Desktop/cranfield/Assignment for ML and Programming/CNN_Project/CNN_Project/matlab_process/";
+const string labels_path = "/Users/yang/Desktop/cranfield/Assignment for ML and Programming/CNN_Project/CNN_Project/processed_data/labels/";

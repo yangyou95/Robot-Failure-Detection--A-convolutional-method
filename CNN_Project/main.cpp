@@ -27,8 +27,10 @@ int main() {
         input_path = input_folder_path + inp;
         output_path = output_data_process_path + outp;
         data_process(input_path, output_path);
-    }else if (n == 2){
-       void label_process();
+    }
+    
+    if (n == 2){
+       label_process();
     }
 
     return 0;
